@@ -10,5 +10,5 @@ script:
   - docker images
   - docker tag jupyterhub-k8s $DOCKER_USERNAME/jupyterhub-k8s
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker push $DOCKER_USERNAME/httpd-shibboleth-sp
+  - docker push $DOCKER_USERNAME/jupyterhub-k8s
   - docker logout
